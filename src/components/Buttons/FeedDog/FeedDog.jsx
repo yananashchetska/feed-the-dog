@@ -4,5 +4,14 @@ import { DogContext } from "../../../App";
 export const FeedDog = () => {
   const [feed, setFeed] = useContext(DogContext);
 
-  return <button onClick={() => setFeed(!feed)}>Feed</button>;
+  const feedHandler = () => {
+    setFeed(!feed);
+
+    if (!feed) {
+      setTimeout(() => {
+        setFeed(false);
+      }, 2500);
+    }
+  };
+  return <button onClick={() => feedHandler()}>Feed</button>;
 };
