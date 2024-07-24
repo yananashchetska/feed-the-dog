@@ -1,0 +1,18 @@
+.Dog-section__button{
+  margin-top: 24px;
+}
+
+.feed-button {
+  color: black;
+  padding: 8px 16px;
+  background-color: #ffd6d6;
+  border: none;
+  font-size: 20px;
+  border-radius: 8px;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    background-color: #e9c1c1;
+  }
+
+}
