@@ -5,12 +5,8 @@ export const FeedDog = () => {
   const [feed, setFeed] = useContext(DogContext);
 
   const feedHandler = () => {
-    setFeed(!feed);
-
     if (!feed) {
-      setTimeout(() => {
-        setFeed(false);
-      }, 2500);
+      setFeed(true);
     }
   };
   return <button onClick={() => feedHandler()}>Feed</button>;
